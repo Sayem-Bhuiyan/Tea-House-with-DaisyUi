@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- link of font-awesome -->
+    <script src="https://kit.fontawesome.com/f6e4edba18.js" crossorigin="anonymous"></script>
+
     <!-- google font of manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +25,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'heading-color': ' #1C1C1C',
+                        'heading-p-color': ' #777',
                     }
                 }
             }
@@ -36,7 +41,40 @@
 </head>
 
 <body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero mt-16">
+            <div class="hero-content flex-col lg:flex-row gap-10">
+              <div class="space-y-7">
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-heading-color leading-tight">It's good <br> 
+                    tea time at The <br>
+                    Tea House</h1>
+                <p class="text-heading-p-color text-base font-medium lg:w-[513px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary font-extrabold">Explore More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 font-extrabold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                  </button>
+              </div>
+              <div class="p-5">
+                <img src="images/banner.png" class="max-w-sm" />
 
+                <!-- rating badge -->
+                <div class="-mt-12 -ml-6 flex items-center gap-3 w-60 h-24 p-5 drop-shadow-lg rounded-lg bg-white">
+                    <div>
+                        <i class="fa-solid fa-star text-amber-300 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-extrabold ">
+                            5.00
+                        </h3>
+                        <p class="text-heading-p-color text-base font-semibold">
+                            Trust Pilot Ratings
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+    </header>
 </body>
 
 </html>
